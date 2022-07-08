@@ -1,0 +1,4 @@
+--pre
+ipfabric==5.0.0b2
+python-dotenv
+deepdiff
