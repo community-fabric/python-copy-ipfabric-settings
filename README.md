@@ -3,14 +3,12 @@
 ## Install
 `pip install --pre -r requirements.txt`
 
-## Notes
-Initial testing was performed copying v4.4.3 -> pre-released v5.0.0 however more tests will need to be done.
-Also this is using ipfabric==5.0.0b2 and will be updated once 5.0.0 is released and tested.
-
 ## Setup
 You can manually set up the environment variables by copy `sample.env` to `.env` and editting the file.
 
 Skipping this step will walk you through a guided setup which will ensure the file is correctly configured.
+
+This has been tested and compatible with v4.4.3 and v5.0.0.
 
 **Note: IPF_API_VERSION_SOURCE must be set to `v1` if using IP Fabric version 4.X.X.
 If IPF version is v5.X then set to `v5`.**

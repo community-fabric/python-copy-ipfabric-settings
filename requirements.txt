@@ -1,4 +1,3 @@
---pre
-ipfabric==5.0.0b2
+ipfabric
 python-dotenv
 deepdiff
