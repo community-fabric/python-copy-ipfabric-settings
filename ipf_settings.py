@@ -65,7 +65,9 @@ class IPFSettings:
         i = input(PROMPT.format('Custom Site Name Attributes')).strip().lower()
         if i and 'y' in i[0]:
             attributes = Attributes(client=self.ipf)
-            attributes.delete_attribute_by_id(*[a['id'] for a in attributes.all()])
+            target_attributes = attributes.all()
+            if target_attributes:
+                attributes.delete_attribute_by_id(*[a['id'] for a in target_attributes])
             attributes.set_sites_by_sn(other.sitename_attributes)
             print("\n##INFO## Copied Custom Site Name Attributes Completed.\n")
         i = input(PROMPT.format('Site Separation Rules')).strip().lower()
